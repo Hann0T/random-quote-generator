@@ -1,0 +1,4 @@
+body{padding:0;margin:0;font-family:'Ubuntu', sans-serif}h1{margin:0}main{background-color:#eee;height:100vh;display:flex;justify-content:center;align-items:center}.container{background-color:white;width:60%;border-radius:20px;box-sizing:border-box;padding:50px;text-align:center}.text{font-style:italic}.text::before{content:'\'\'';font-size:42px}.button-container{display:flex;justify-content:flex-end}.button-container #newQuote{background-color:#fff;border:1px solid black;border-radius:10px;box-sizing:border-box;padding:.75em 1.5em;font-size:18px;cursor:pointer}.button-container #newQuote:hover{background-color:black;color:white}
+
+
+/*# sourceMappingURL=main.e618cbe10113b30d7119.css.map*/
