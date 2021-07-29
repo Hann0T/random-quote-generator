@@ -1,4 +1,3 @@
-
 function getInfo(api_url, callback) {
     fetch(api_url)
         .then(response => response.json())
@@ -12,21 +11,24 @@ function printInfo(API) {
         text.innerHTML = data[randomNumber].text;
         author.innerHTML = data[randomNumber].author;
         console.log(randomNumber);
-    })
+    });
 }
 
-const mainFunctionality = () => {
-    const API = 'https://type.fit/api/quotes/';
-    const text = document.getElementById('text');
-    const author = document.getElementById('author');
-    const buttonNewQuote = document.getElementById('newQuote');
+const API = 'https://type.fit/api/quotes/';
+const text = document.getElementById('text');
+const author = document.getElementById('author');
+const buttonNewQuote = document.getElementById('newQuote');
 
+printInfo(API);
+
+buttonNewQuote.addEventListener('mousedown', (event) => {
     printInfo(API);
+    event.preventDefault();
+    return false;
+});
 
-    buttonNewQuote.addEventListener('click', printInfo(API));
-
-};
-
-window.onload = () => {
-    mainFunctionality();
-};
+buttonNewQuote.addEventListener('touchstart', (event) => {
+    printInfo(API);
+    event.preventDefault();
+    return false;
+});
