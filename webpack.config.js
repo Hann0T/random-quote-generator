@@ -50,7 +50,7 @@ module.exports = {
         } ),
         // Add config for each html file
         new htmlWebpackPlugin( {
-            title: 'Quote Generator',
+            title: 'Random Quote Generator',
             inject: true,
             template: './public/index.html',
             filename: './index.html'
